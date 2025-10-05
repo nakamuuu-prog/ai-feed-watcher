@@ -1,0 +1,48 @@
+# 既読JSONの保存先（相対でOK。Python側で自動作成）
+state_dir: ./state
+
+# Slackは環境変数 SLACK_WEBHOOK_URL を優先（Secretsで注入）
+# slack_webhook_url: ""   # ←基本は空のまま/コメントアウト推奨
+
+# 既読ハッシュ保持数
+max_seen: 50
+
+# HTTPタイムアウト秒
+timeout: 20
+
+# 直近N日以内だけ通知（初回/復旧時の洪水ガード）
+cutoff_days: 7
+
+# 実行1回あたりの通知最大件数
+max_emit: 20
+
+feeds:
+  # --- 英語圏AI ---
+  - name: OpenAI Blog
+    url: https://openai.com/blog/rss.xml
+  - name: Google AI Blog
+    url: https://ai.googleblog.com/atom.xml
+  - name: DeepMind Blog
+    url: https://deepmind.google/discover/blog/feed.xml
+  - name: Meta AI
+    url: https://ai.facebook.com/blog/rss/
+  - name: The Decoder
+    url: https://the-decoder.com/feed/
+  - name: VentureBeat AI
+    url: https://venturebeat.com/category/ai/feed/
+  - name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+  - name: MIT Technology Review (AI)
+    url: https://www.technologyreview.com/feed/ai/
+
+  # --- 研究系 ---
+  - name: arXiv cs.AI (new)
+    url: https://export.arxiv.org/rss/cs.AI
+  - name: arXiv cs.CL (NLP)
+    url: https://export.arxiv.org/rss/cs.CL
+  - name: Papers with Code — Trending
+    url: https://paperswithcode.com/feeds/latest
+
+  # --- 日本語（任意） ---
+  - name: Ledge.ai
+    url: https://ledge.ai/feed/

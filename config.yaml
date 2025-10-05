@@ -11,7 +11,7 @@ max_seen: 50
 timeout: 20
 
 # 直近N日以内だけ通知（初回/復旧時の洪水ガード）
-cutoff_days: 7
+cutoff_days: 1
 
 # 実行1回あたりの通知最大件数
 max_emit: 20

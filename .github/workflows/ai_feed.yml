@@ -1,0 +1,78 @@
+name: AI Feed Watcher
+
+on:
+  schedule:
+    # 毎日 09:00 JST 実行（= 00:00 UTC）
+    - cron: '0 23 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write # stateブランチにpushするため
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      # stateブランチを別ディレクトリにチェックアウト（存在しない場合は続行）
+      - name: Checkout state branch (if exists)
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: state_repo
+        continue-on-error: true
+
+      - name: Restore state dir
+        run: |
+          mkdir -p state
+          if [ -d state_repo/state ]; then
+            cp -a state_repo/state/. state/ || true
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run feed watcher
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          python feed_watcher.py --config config.yaml --log INFO
+
+      - name: Save state back to branch
+        run: |
+          # state_repo が無ければ初期化（オーファンブランチ作成）
+          if [ ! -d state_repo ]; then
+            mkdir state_repo
+            cd state_repo
+            git init
+            git checkout --orphan state
+            echo "# state branch (generated)" > README.md
+            mkdir -p state
+            cd ..
+          fi
+
+          # state を同期
+          mkdir -p state_repo/state
+          rsync -a --delete state/ state_repo/state/
+
+          # コミット & プッシュ
+          cd state_repo
+          git config user.name  "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Update state $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          # ここで origin を main のものに紐付け
+          if ! git remote | grep -q origin; then
+            git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
+          fi
+          git push origin HEAD:state

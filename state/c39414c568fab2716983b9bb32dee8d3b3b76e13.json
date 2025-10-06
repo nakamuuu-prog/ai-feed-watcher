@@ -2,6 +2,11 @@
   "etag": null,
   "feed_url": "https://blog.google/technology/ai/rss/",
   "last_modified": null,
-  "last_seen_ids": [],
-  "updated_at": "2025-10-05T23:16:40.849126+00:00"
+  "last_seen_ids": [
+    "689c5bdc814703c179791efb7a2a74f0e94dc796",
+    "815f5dc92d8bf46878373c9a195365cf3ae8e521",
+    "946aa1664c297b9fa8b9d15f98b8555230d32bae",
+    "6b69c489b82ed2c36f3879133cde4556c9523122"
+  ],
+  "updated_at": "2025-10-06T23:18:37.504686+00:00"
 }

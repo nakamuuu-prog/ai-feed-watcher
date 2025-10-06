@@ -2,6 +2,12 @@
   "etag": null,
   "feed_url": "https://openai.com/blog/rss.xml",
   "last_modified": null,
-  "last_seen_ids": [],
-  "updated_at": "2025-10-05T23:16:40.668342+00:00"
+  "last_seen_ids": [
+    "fdc7cb0be231b60a44594372d7c3daea7f3303c6",
+    "d42ac4b39a558513a2037c909498105ec5bc27f9",
+    "a90f41cc88c1aa5b222f092c5fc4fdc5d82c504c",
+    "3f4d97580c7b00912dd3219e07d0e791e80e5c58",
+    "6510370f7f002df3c9fe09f0a6ca1f340b1d59f1"
+  ],
+  "updated_at": "2025-10-06T23:18:37.075371+00:00"
 }

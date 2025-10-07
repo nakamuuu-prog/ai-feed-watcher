@@ -84,6 +84,7 @@ def process_feed(
     state_dir: Path,
     max_seen: int = 50,
     slack_webhook: Optional[str] = None,
+    slack_mentions: Optional[str] = None,
     source_tag: Optional[str] = None,
     timeout: int = 20,
     cutoff_days: Optional[int] = None,
@@ -174,7 +175,11 @@ def process_feed(
 
         # Slack
         if slack_webhook:
-            lines = [f"*{tag}* — {len(emit_list)} new item(s):"]
+            lines = []
+            # メンションを最初の行に入れる
+            if slack_mentions:
+                lines.append(slack_mentions)
+            lines.append(f"*{tag}* — {len(emit_list)} new item(s):")
             for item in emit_list[:15]:
                 title = item['title'].replace("&", "&amp;")
                 lines.append(f"• <{item['link']}|{title}>")
@@ -196,6 +201,7 @@ def run(config_path: Path) -> int:
     state_dir = Path(cfg.get("state_dir", "./state")).expanduser().resolve()
     # Secrets優先（ローカルなら export SLACK_WEBHOOK_URL=... でOK）
     slack_webhook = os.environ.get("SLACK_WEBHOOK_URL") or cfg.get("slack_webhook_url")
+    slack_mentions = cfg.get("slack_mentions", "")
     max_seen = int(cfg.get("max_seen", 50))
     timeout = int(cfg.get("timeout", 20))
     cutoff_days = cfg.get("cutoff_days")
@@ -219,6 +225,7 @@ def run(config_path: Path) -> int:
                 url, state_dir,
                 max_seen=max_seen,
                 slack_webhook=slack_webhook,
+                slack_mentions=slack_mentions,
                 source_tag=tag,
                 timeout=timeout,
                 cutoff_days=cutoff_days,

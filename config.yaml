@@ -4,6 +4,9 @@ state_dir: ./state
 # SlackのWebhook URL
 slack_webhook_url: ''
 
+# Slack通知設定
+slack_mentions: '<!channel>'
+
 # 既読ハッシュ保持数
 max_seen: 50
 

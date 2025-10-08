@@ -83,14 +83,12 @@ def process_feed(
     feed_url: str,
     state_dir: Path,
     max_seen: int = 50,
-    slack_webhook: Optional[str] = None,
-    slack_mentions: Optional[str] = None,
     source_tag: Optional[str] = None,
     timeout: int = 20,
     cutoff_days: Optional[int] = None,
     max_emit: int = 50,
-) -> int:
-    """Process one feed and emit new items. Returns count."""
+) -> List[Dict[str, Any]]:
+    """Process one feed and emit new items. Returns new items."""
     tag = source_tag or feed_url
     feed_hash = sha1(feed_url)
     st_path = state_dir / f"{feed_hash}.json"
@@ -112,11 +110,11 @@ def process_feed(
         r = requests.get(feed_url, headers=headers, timeout=timeout)
     except Exception as e:
         logging.error("Fetch error %s: %s", feed_url, e)
-        return 0
+        return []
 
     if r.status_code == 304:
         logging.info("Not modified: %s", feed_url)
-        return 0
+        return []
 
     new_etag = r.headers.get("ETag") or state.get("etag")
     new_last_modified = r.headers.get("Last-Modified") or state.get("last_modified")
@@ -124,7 +122,7 @@ def process_feed(
     parsed = feedparser.parse(r.content)
     if parsed.bozo and not parsed.entries:
         logging.warning("Parse warning for %s: %s", feed_url, parsed.bozo_exception)
-        return 0
+        return []
 
     entries = parsed.entries or []
 
@@ -164,7 +162,7 @@ def process_feed(
             "source": parsed.feed.get("title", tag),
         })
 
-    count = 0
+    emit_list: List[Dict[str, Any]] = []
     if new_items:
         MAX_EMIT = max_emit
         emit_list = new_items[:MAX_EMIT]
@@ -173,29 +171,20 @@ def process_feed(
         for item in emit_list:
             print(f"[{item['source']}] {item['title']}\n{item['link']}\n— {item['published']}\n")
 
-        # Slack
-        if slack_webhook:
-            lines = []
-            # メンションを最初の行に入れる
-            if slack_mentions:
-                lines.append(slack_mentions)
-            lines.append(f"*{tag}* — {len(emit_list)} new item(s):")
-            for item in emit_list[:15]:
-                title = item['title'].replace("&", "&amp;")
-                lines.append(f"• <{item['link']}|{title}>")
-            post_to_slack(slack_webhook, "\n".join(lines))
-
         new_hashes = [it["hash"] for it in emit_list]
         state["last_seen_ids"] = (new_hashes + state.get("last_seen_ids", []))[:max_seen]
-        count = len(emit_list)
 
     state["etag"] = new_etag
     state["last_modified"] = new_last_modified
     state["updated_at"] = utcnow_iso()
     save_json(st_path, state)
-    return count
+    return emit_list
+
 
 def run(config_path: Path) -> int:
+    run_id = f"run-{int(time.time())}-{os.urandom(2).hex()}"
+    logging.info("Starting feed watcher with Run ID: %s", run_id)
+
     cfg = load_yaml(config_path)
     feeds: List[Dict[str, Any]] = cfg.get("feeds", [])
     state_dir = Path(cfg.get("state_dir", "./state")).expanduser().resolve()
@@ -214,31 +203,77 @@ def run(config_path: Path) -> int:
     # state_dir を確実に作成
     state_dir.mkdir(parents=True, exist_ok=True)
 
-    total_new = 0
+    all_new_items: List[Dict[str, Any]] = []
     for f in feeds:
         url = f.get("url")
         if not url:
             continue
         tag = f.get("name") or url
         try:
-            n = process_feed(
+            new_items = process_feed(
                 url, state_dir,
                 max_seen=max_seen,
-                slack_webhook=slack_webhook,
-                slack_mentions=slack_mentions,
                 source_tag=tag,
                 timeout=timeout,
                 cutoff_days=cutoff_days,
                 max_emit=max_emit
             )
-            logging.info("Processed %s -> %d new", tag, n)
-            total_new += n
+            if new_items:
+                logging.info("[%s] Processed %s -> %d new", run_id, tag, len(new_items))
+                all_new_items.extend(new_items)
+            else:
+                logging.info("[%s] Processed %s -> 0 new", run_id, tag)
         except KeyboardInterrupt:
             raise
         except Exception as e:
-            logging.exception("Error processing %s: %s", tag, e)
+            logging.exception("[%s] Error processing %s: %s", run_id, tag, e)
 
-    return 0 if total_new >= 0 else 1
+    if slack_webhook and all_new_items:
+        # Build the full message content first
+        header_lines = []
+        if slack_mentions:
+            header_lines.append(slack_mentions)
+        header_lines.append(f"📬 *{len(all_new_items)}* new item(s) from your feeds: (Run ID: {run_id})")
+
+        item_lines = []
+        items_by_source: Dict[str, List] = {}
+        for item in all_new_items:
+            source = item.get("source", "Unknown Source")
+            if source not in items_by_source:
+                items_by_source[source] = []
+            items_by_source[source].append(item)
+
+        # Sort sources by name for consistent order
+        for source in sorted(items_by_source.keys()):
+            items = items_by_source[source]
+            item_lines.append(f"\n*{source}* ({len(items)}):")
+            for item in items[:15]:  # 1ソースあたりの上限
+                title = item['title'].replace("&", "&amp;")
+                item_lines.append(f"• <{item['link']}|{title}>")
+
+        # Combine and chunk
+        full_message_lines = header_lines + item_lines
+        MAX_LINES_PER_MSG = 35
+        
+        chunks = [full_message_lines[i:i + MAX_LINES_PER_MSG] for i in range(0, len(full_message_lines), MAX_LINES_PER_MSG)]
+
+        for i, chunk in enumerate(chunks):
+            # For subsequent chunks, add a header to indicate it's a continuation
+            if i > 0:
+                continuation_header = f"*Part {i+1}/{len(chunks)}* (continued... Run ID: {run_id})"
+                # Also add mention if it exists
+                if slack_mentions:
+                    continuation_header = f"{slack_mentions}\n{continuation_header}"
+                chunk.insert(0, continuation_header)
+
+            post_to_slack(slack_webhook, "\n".join(chunk))
+            logging.info("[%s] Sent Slack notification chunk %d/%d with %d lines.", run_id, i+1, len(chunks), len(chunk))
+
+        logging.info("[%s] Finished sending Slack notifications for %d items.", run_id, len(all_new_items))
+
+    return 0
+
+
 
 def main():
     parser = argparse.ArgumentParser(description="Fetch multiple RSS/Atom feeds and emit new items (console/Slack).")

@@ -2,8 +2,9 @@ name: AI Feed Watcher
 
 on:
   schedule:
-    # 毎日 08:00 JST（= 前日 23:00 UTC）
-    - cron: '0 23 * * *'
+    # 毎日 11:30 JST (02:30 UTC) と 18:00 JST (09:00 UTC)
+    - cron: '30 2 * * *'
+    - cron: '0 9 * * *'
   workflow_dispatch: {}
 
 permissions:

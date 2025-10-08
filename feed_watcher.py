@@ -233,7 +233,7 @@ def run(config_path: Path) -> int:
         header_lines = []
         if slack_mentions:
             header_lines.append(slack_mentions)
-        header_lines.append(f"📬 *{len(all_new_items)}* new item(s) from your feeds: (Run ID: {run_id})")
+        header_lines.append(f"📬 *{len(all_new_items)}* new item(s) from your feeds:")
 
         item_lines = []
         items_by_source: Dict[str, List] = {}
@@ -251,25 +251,10 @@ def run(config_path: Path) -> int:
                 title = item['title'].replace("&", "&amp;")
                 item_lines.append(f"• <{item['link']}|{title}>")
 
-        # Combine and chunk
+        # Combine and send as a single message
         full_message_lines = header_lines + item_lines
-        MAX_LINES_PER_MSG = 35
-        
-        chunks = [full_message_lines[i:i + MAX_LINES_PER_MSG] for i in range(0, len(full_message_lines), MAX_LINES_PER_MSG)]
-
-        for i, chunk in enumerate(chunks):
-            # For subsequent chunks, add a header to indicate it's a continuation
-            if i > 0:
-                continuation_header = f"*Part {i+1}/{len(chunks)}* (continued... Run ID: {run_id})"
-                # Also add mention if it exists
-                if slack_mentions:
-                    continuation_header = f"{slack_mentions}\n{continuation_header}"
-                chunk.insert(0, continuation_header)
-
-            post_to_slack(slack_webhook, "\n".join(chunk))
-            logging.info("[%s] Sent Slack notification chunk %d/%d with %d lines.", run_id, i+1, len(chunks), len(chunk))
-
-        logging.info("[%s] Finished sending Slack notifications for %d items.", run_id, len(all_new_items))
+        post_to_slack(slack_webhook, "\n".join(full_message_lines))
+        logging.info("[%s] Sent Slack notification for %d items.", run_id, len(all_new_items))
 
     return 0
 

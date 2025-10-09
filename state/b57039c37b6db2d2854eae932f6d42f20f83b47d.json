@@ -1,7 +1,9 @@
 {
-  "etag": null,
+  "etag": "W/\"7e24f6c83249cd0010057f3a6d085203\"",
   "feed_url": "https://openai.com/blog/rss.xml",
   "last_modified": null,
-  "last_seen_ids": [],
-  "updated_at": "2025-10-08T09:13:22.350396+00:00"
+  "last_seen_ids": [
+    "236988a26963c7f4c63f3077c8505db2f88d6fe1"
+  ],
+  "updated_at": "2025-10-09T03:12:09.753086+00:00"
 }

@@ -1,8 +1,18 @@
 {
-  "etag": "W/\"7bfaced99eebd3073a7385e10d23de64\"",
+  "etag": "W/\"088314f8ed5655fad1177ce0dbfbcdd7\"",
   "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-  "last_modified": "Mon, 06 Oct 2025 08:03:53 GMT",
+  "last_modified": "Fri, 10 Oct 2025 00:15:31 GMT",
   "last_seen_ids": [
+    "60bc39d82fecd987760ea131563916e6dc4613ab",
+    "8c8757ae95d0f343634c26f06f957684baecd495",
+    "1dc048359db7a7fea40ac109242f472d61ba6472",
+    "c37c48f92181d9e189df0c411e2ef8001f165589",
+    "cb8e3ee24b1d2f84c86f1595a5d0e2773dd9b8cd",
+    "03c4208c4c2e9f1f5906a712f51d371cc6990f18",
+    "eb4eef3a381b961475cf451154c7e44b3fcdb50e",
+    "107f33d30210e353c344567ab5aff2990ee1d00d",
+    "e9f6d2109f0d88a0f612aa402c82f3784e93c39e",
+    "3266e7fc6caab9742c3434db87a908516619f01d",
     "dd5daca1faa2c7c167355f987701e15fcfa6f60f",
     "dd2abdb65699579c7044a8aaeca06033a49466c2",
     "67528e6efa05ee852ae0f669d48b1162d58dd0e7",
@@ -24,5 +34,5 @@
     "1ec24788db9876a306adae5a4b95a536e6126edb",
     "491af359bbdd39eeba646919ed01845b1ecdfeee"
   ],
-  "updated_at": "2025-10-09T09:13:30.960942+00:00"
+  "updated_at": "2025-10-10T03:12:52.851049+00:00"
 }

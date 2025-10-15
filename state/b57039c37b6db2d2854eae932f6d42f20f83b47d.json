@@ -3,9 +3,11 @@
   "feed_url": "https://openai.com/blog/rss.xml",
   "last_modified": null,
   "last_seen_ids": [
+    "5b9bbae6d729a2810b3a2e80b8395afec4788830",
+    "0b71e1c57cdb0af86b4b90963e18439092f1c1ad",
     "96f43ed00389e3664a7f33b8ca84156a6e74a16f",
     "2ca40ea42de9966bc3130274828b86680f754dba",
     "236988a26963c7f4c63f3077c8505db2f88d6fe1"
   ],
-  "updated_at": "2025-10-14T09:13:50.205525+00:00"
+  "updated_at": "2025-10-15T03:25:10.292656+00:00"
 }

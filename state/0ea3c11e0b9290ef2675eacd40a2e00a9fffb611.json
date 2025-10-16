@@ -1,9 +1,10 @@
 {
   "etag": null,
   "feed_url": "https://deepmind.google/blog/rss.xml",
-  "last_modified": "Wed, 08 Oct 2025 10:55:26 GMT",
+  "last_modified": "Wed, 15 Oct 2025 16:01:08 GMT",
   "last_seen_ids": [
+    "68ba2e17387dc4540579f527fa24255f11c75272",
     "2d184710a157a2f2178f178b11ba506739be0c2a"
   ],
-  "updated_at": "2025-10-15T09:13:40.371367+00:00"
+  "updated_at": "2025-10-16T03:24:20.949056+00:00"
 }

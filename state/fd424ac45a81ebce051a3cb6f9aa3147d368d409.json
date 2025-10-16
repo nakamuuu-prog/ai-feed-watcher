@@ -1,10 +1,11 @@
 {
   "etag": null,
   "feed_url": "https://research.google/blog/rss/",
-  "last_modified": "Thu, 09 Oct 2025 09:56:00 GMT",
+  "last_modified": "Wed, 15 Oct 2025 13:07:00 GMT",
   "last_seen_ids": [
+    "8c18f5ef1d3d95ab3acd574042e267f60d29f36f",
     "e9ccec4dea0184b2cc693c3c8b5c4d958315a1f7",
     "02bdbf65b7b7e5e19a9ee457b98d6ae187b1bf1d"
   ],
-  "updated_at": "2025-10-15T09:13:39.877304+00:00"
+  "updated_at": "2025-10-16T03:24:20.534241+00:00"
 }

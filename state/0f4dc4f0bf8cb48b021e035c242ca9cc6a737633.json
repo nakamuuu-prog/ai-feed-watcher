@@ -1,8 +1,10 @@
 {
-  "etag": "W/\"f01838dc630759bb6d62b08f933349e7\"",
+  "etag": "W/\"a664dc1fb80c73caf99c2834218ab715\"",
   "feed_url": "https://www.marktechpost.com/feed/",
-  "last_modified": "Fri, 17 Oct 2025 08:29:06 GMT",
+  "last_modified": "Sat, 18 Oct 2025 02:28:54 GMT",
   "last_seen_ids": [
+    "1cf54900c59df14ddceae256af50616a2729869f",
+    "72168914d2af2eb9705ad03c3076050d51923537",
     "5d5f3bff5afe142564ad6e30232bc598bec884a9",
     "b6d031153b552525d17e741160628edc9d9264a9",
     "39047e401a064bf6c32455fda79e2cbedb2c5cb2",
@@ -44,5 +46,5 @@
     "d03da72648dda8983f6f590b60800f6341c68176",
     "845351ae0288f140c173e857c3e602e0063f7930"
   ],
-  "updated_at": "2025-10-17T09:13:45.379757+00:00"
+  "updated_at": "2025-10-18T03:07:50.337543+00:00"
 }

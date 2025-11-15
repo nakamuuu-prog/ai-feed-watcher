@@ -1,8 +1,11 @@
 {
   "etag": null,
   "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-  "last_modified": "Thu, 13 Nov 2025 21:45:34 GMT",
+  "last_modified": "Sat, 15 Nov 2025 00:39:00 GMT",
   "last_seen_ids": [
+    "ecf46943a012f991fdeca35a96d0d37618c31e43",
+    "a989a7292974d8f8bf2a4e9b7584cda72063d200",
+    "d38d7144dc99009e0c5f8ca9224a8c684ec70145",
     "d1500d9b188a5a782a408891fcab31e93b953840",
     "aa6a72f2328fe3088a16beadc1f6e9bafddf801d",
     "e1c50e95cf9e604501fb47c84ed4ad68b17ac90a",
@@ -49,10 +52,7 @@
     "36be0cc5c0471655c452bbc9ac944f6e14bc4e7c",
     "546fb0d27173e5a090cd9cacb092f8f79a75638f",
     "9c9dd7021fb673dbe0fc500013202651d030d2df",
-    "6aa38a6ade4435c7c48ddfb0ae06f8f372b52b72",
-    "7ee953408dd03958a0c2089cab25ef9da993aa86",
-    "e518878b744a62efcf1941b7fe0614d34985a06f",
-    "bdf3329aa0c3799647df46fd9d5c469a8916685c"
+    "6aa38a6ade4435c7c48ddfb0ae06f8f372b52b72"
   ],
-  "updated_at": "2025-11-14T03:32:23.899187+00:00"
+  "updated_at": "2025-11-15T03:27:26.817624+00:00"
 }

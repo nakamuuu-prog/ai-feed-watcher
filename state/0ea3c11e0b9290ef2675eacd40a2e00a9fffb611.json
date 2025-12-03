@@ -1,7 +1,7 @@
 {
   "etag": null,
   "feed_url": "https://deepmind.google/blog/rss.xml",
-  "last_modified": "Wed, 29 Oct 2025 14:17:00 GMT",
+  "last_modified": "Tue, 25 Nov 2025 16:00:12 GMT",
   "last_seen_ids": [
     "8b81b60ebf639846fd38d0471cef09b8fbd19fdd",
     "62ba54a7e71a609f49b620b69d286ed1a1bc992b",
@@ -9,5 +9,5 @@
     "68ba2e17387dc4540579f527fa24255f11c75272",
     "2d184710a157a2f2178f178b11ba506739be0c2a"
   ],
-  "updated_at": "2025-11-03T09:15:43.091667+00:00"
+  "updated_at": "2025-12-03T03:37:39.424893+00:00"
 }

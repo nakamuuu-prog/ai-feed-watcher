@@ -3,6 +3,10 @@
   "feed_url": "https://venturebeat.com/category/ai/feed/",
   "last_modified": null,
   "last_seen_ids": [
+    "2f6f92ed13ed4c2073fdc9040390529ceba922e7",
+    "dd2640f065f13ad1047c407d904169823e8ec512",
+    "eb851c3aac2dab797afa9dcfc39f98439cae963e",
+    "8d55f6a3edd5093f5a4ad60fa014bc08fe19ecd4",
     "5c395410dcfc5d3aa92d9a6f43eb6a7d0aa9314f",
     "8b789f5a437bc3db78630c2ed3f643582b452463",
     "ac7ce8621960c2e2f98841b299518bcf3a9fd4da",
@@ -48,11 +52,7 @@
     "63d5368190510b666d7aec4ad8454f4c6a5e4cb6",
     "94afda5e32063d524b0b7d56b16f129f84f74351",
     "e8a3341088b5c3c254de6ee7cb0f1f9c00451346",
-    "ea8c4579143e48d07d0110602758a3b84b5c84f3",
-    "784c5862d68401fcae8ff7e9e68e5ae395cb7a74",
-    "39f63f2968b7023684af7eb641f1a93b9b7ed4f6",
-    "0aee0384f49b86144ae147ff4ab562ff6994002c",
-    "da72072348d5d9b8c40c7a9727d37b6d0f73e033"
+    "ea8c4579143e48d07d0110602758a3b84b5c84f3"
   ],
-  "updated_at": "2025-12-15T09:23:36.190708+00:00"
+  "updated_at": "2025-12-16T03:44:34.586483+00:00"
 }

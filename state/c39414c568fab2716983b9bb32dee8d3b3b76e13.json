@@ -3,6 +3,8 @@
   "feed_url": "https://blog.google/technology/ai/rss/",
   "last_modified": null,
   "last_seen_ids": [
+    "ded3ef6f41f11a854110e31b239bbe48facc36a9",
+    "3d127cff8d12df007a78b5bb7fd78b9280d2efdd",
     "4a8bc5086b0fb741a21fcf46a47d07465ba52053",
     "b32e60a2501b1c8ca546465483300f26388834ec",
     "cf9ef5e2a80a8c60e36d878cb83cae9894becffc",
@@ -50,9 +52,7 @@
     "1a0ba996e34dadb0f2412b9406e7545a826e7878",
     "08e8c204389ac6c567a004027ed3a63e0bc122d5",
     "d63ceb3844148f66b187e38d755bb97d5aa12c4a",
-    "4eebd4f6ad39fde5264590352d06432f64f228e2",
-    "b78cfe230ff82a544d492f8ea95d0ba727ff01e5",
-    "ff6af49b6d35fe90c81fe04fb80e36dada7368f1"
+    "4eebd4f6ad39fde5264590352d06432f64f228e2"
   ],
-  "updated_at": "2025-12-18T09:18:52.661942+00:00"
+  "updated_at": "2025-12-19T03:44:08.271822+00:00"
 }

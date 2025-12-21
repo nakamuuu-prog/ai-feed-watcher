@@ -1,8 +1,10 @@
 {
-  "etag": "W/\"9f7a806b75ff28c5200606b443fc17bf\"",
+  "etag": "W/\"f58fed6900f31a8f6893bec3f0dd5431\"",
   "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-  "last_modified": "Sat, 20 Dec 2025 02:42:11 GMT",
+  "last_modified": "Sat, 20 Dec 2025 22:00:21 GMT",
   "last_seen_ids": [
+    "8eec4e696287123a8ccf7b4a52cafaa183456b47",
+    "5516146caafa1617cfbdafc71bf7a3eb366eac0b",
     "bf5c8a218612cf5addd0cacc4a80aca4b327ded4",
     "107ec5693551729fecdec8ba33430dcd3cd12f24",
     "a1421c171a445529405075fea252ba0ef61c53e6",
@@ -50,9 +52,7 @@
     "1344a0cc991842df611b41e83169dae0d9c6436d",
     "2da818f509d200c8f98523c7aa645cd1251ce2a5",
     "9ae4e194cbda8f7cd8765c8044b7005ac748255b",
-    "659684db8f7dc18c7f4fb1c2a812d95dc15b3412",
-    "5c8ab8e0a0c55c6861a7a66bc08996b6d9fceb93",
-    "e2dac9fcb61976ab4a53a92f2ff389ca5196f4d1"
+    "659684db8f7dc18c7f4fb1c2a812d95dc15b3412"
   ],
-  "updated_at": "2025-12-20T03:35:16.440010+00:00"
+  "updated_at": "2025-12-21T03:47:38.168948+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "etag": "077a9d7792ef74f090ed48eb13b06cf7e274d6c06f7f3a84a28cdf5139e50611",
+  "etag": "2f183e6f5fe2a2fe7fd0877c36309d17cedfdfdc7d9df848f47915b60dcfb9fc",
   "feed_url": "https://export.arxiv.org/rss/cs.AI",
   "last_modified": null,
   "last_seen_ids": [
@@ -54,5 +54,5 @@
     "0818c9977ee42272923e4ade89e88a0c0eb6262c",
     "59959ba3cf8716b16d398f369bfd2096ecea8667"
   ],
-  "updated_at": "2026-01-03T09:13:06.196144+00:00"
+  "updated_at": "2026-01-04T09:12:27.368687+00:00"
 }

@@ -1,8 +1,9 @@
 {
-  "etag": "W/\"e3684f68df7341a4422e125e95528ace\"",
+  "etag": "W/\"2f849646cd041ba1c5f91932489c1834\"",
   "feed_url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
-  "last_modified": "Mon, 19 Jan 2026 05:29:11 GMT",
+  "last_modified": "Mon, 19 Jan 2026 15:12:08 GMT",
   "last_seen_ids": [
+    "efdddb79ff21189a671215f35b852ac5d9c355b3",
     "2019eccab524cc1eb2519c0ef54f58454405cb5d",
     "78396ee1f842e89dc668d90280ddbc65c4025b02",
     "d2dac1a83e168e2a94e3e9d3bc07ed32e264e704",
@@ -51,8 +52,7 @@
     "651499d88f8f67445c48923ca48da7bfb24ef52d",
     "c6b6c5b60623197db8883f7a03aacbbe2597b16d",
     "3b8bf39f7af899f654f80a3d3cde68ce7e672ca4",
-    "e4dc67646ca47cf7db0ba6ee930dbdec2c8df8d0",
-    "48d999df63652e5cc554012509a6ffa9a9a87f9d"
+    "e4dc67646ca47cf7db0ba6ee930dbdec2c8df8d0"
   ],
-  "updated_at": "2026-01-19T09:26:06.664815+00:00"
+  "updated_at": "2026-01-20T03:54:18.951223+00:00"
 }

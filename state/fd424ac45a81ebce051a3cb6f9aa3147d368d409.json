@@ -1,8 +1,9 @@
 {
   "etag": null,
   "feed_url": "https://research.google/blog/rss/",
-  "last_modified": "Thu, 15 Jan 2026 22:56:49 GMT",
+  "last_modified": "Thu, 22 Jan 2026 16:56:44 GMT",
   "last_seen_ids": [
+    "17893d1f68eb173a2c51eab64e65b3cdf1bbd3f6",
     "ecd12946b4c0cbff7a5e57d6a1bf9f46254d56ff",
     "f7128d17039d53b883ebad5d1784c71229cf8732",
     "3ffbe3fac2904bac32db4104701f9843f9c56489",
@@ -38,5 +39,5 @@
     "e9ccec4dea0184b2cc693c3c8b5c4d958315a1f7",
     "02bdbf65b7b7e5e19a9ee457b98d6ae187b1bf1d"
   ],
-  "updated_at": "2026-01-22T09:25:02.441319+00:00"
+  "updated_at": "2026-01-23T03:52:29.572143+00:00"
 }

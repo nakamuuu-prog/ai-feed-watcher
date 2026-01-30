@@ -1,8 +1,9 @@
 {
-  "etag": "\"bRZ-JQ\"",
+  "etag": "\"66j5aA\"",
   "feed_url": "https://deepmind.google/blog/rss.xml",
   "last_modified": "Fri, 16 Jan 2026 10:39:00 GMT",
   "last_seen_ids": [
+    "1812f15d5f5ff6e0c33a745aaef8d3c87e34b0d4",
     "11b268cc755483e0686856c8e55643a622cf6b1f",
     "6e2f12694ee75421a71343a5f0c5ec6b5432e0b1",
     "9d22821b6fe444928842013204c55e5f7474d2d9",
@@ -16,5 +17,5 @@
     "68ba2e17387dc4540579f527fa24255f11c75272",
     "2d184710a157a2f2178f178b11ba506739be0c2a"
   ],
-  "updated_at": "2026-01-29T09:33:43.070984+00:00"
+  "updated_at": "2026-01-30T04:19:18.937568+00:00"
 }

@@ -1,8 +1,13 @@
 {
-  "etag": "\"012a5114f081cc475e40c3100e2c4108\"",
+  "etag": "\"f533c58df60077876769a56e7cc68212\"",
   "feed_url": "https://the-decoder.com/feed/",
-  "last_modified": "Sat, 14 Feb 2026 08:23:40 GMT",
+  "last_modified": "Sat, 14 Feb 2026 20:04:09 GMT",
   "last_seen_ids": [
+    "c0326fd79bcd35429d611fe50fb61732e460d6e0",
+    "6f7ebe6856f6992e4027cc9e4905e7f42b323219",
+    "19d1e2a2cc995df7b89ac4cf288339cc79553e4d",
+    "afd8d1ba9faffa872caec469dd889d4391bc2a1d",
+    "c9895bbe05b3816906ad35a56d142be8a83ef345",
     "3e8f8b808a1d02f9c0a5778516e9003c068f5076",
     "a0a417137bb93308fd842aea5678e3bfafae56b3",
     "efc8219ba4a963c2ebbcf0f3ed26f0e51eafd73b",
@@ -47,12 +52,7 @@
     "ca0ae785ee76920f2730b22890673781968762e2",
     "40c4eb692944820475757e98a6c33ed7ab1ad88c",
     "83caf6b405d1bd6fd13aa478f719ea7e8bb7dcd4",
-    "31cbf00a66789a64760ce8b26210ed973ee99ebc",
-    "2fa50b5b4a4620af8b33af8dcd05368dd3af8d73",
-    "e0c3261f5cff4cb660d570fe420e64571556febc",
-    "656b84db913e6ad0089a101366a3de70dd3fb2d4",
-    "98056f5c5be0d9b7ccd8909681a764da1c1132e0",
-    "c113af10582e82eb466debc90f6f7e8d79530af1"
+    "31cbf00a66789a64760ce8b26210ed973ee99ebc"
   ],
-  "updated_at": "2026-02-14T09:22:39.813197+00:00"
+  "updated_at": "2026-02-15T04:32:54.589207+00:00"
 }

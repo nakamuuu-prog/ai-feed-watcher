@@ -1,8 +1,10 @@
 {
-  "etag": "W/\"34957-NEwHRYyZ7gBiD+UvfgpSymwshlU\"",
+  "etag": "W/\"34a68-k0wrCMDMDPSHjL5O6vVt7YdRe8g\"",
   "feed_url": "https://huggingface.co/blog/feed.xml",
   "last_modified": null,
   "last_seen_ids": [
+    "921e5a859005bc54efdb8f140e35ab6a629014eb",
+    "7904925c0a8a67bf7014accc50047980e6481b76",
     "a48598059a697bdeb732df993055d23207e5e50e",
     "5207df288bdf4dac920bba7536d53af62f23cc56",
     "f54671b0bef59c2787792963957f9ebb3b839610",
@@ -32,5 +34,5 @@
     "8988f5b7cbe4327d915384cd5714506e6412b459",
     "fa76930639222d261ba32979e402d1bb295789cd"
   ],
-  "updated_at": "2026-02-19T04:29:56.885235+00:00"
+  "updated_at": "2026-02-20T04:24:48.334102+00:00"
 }

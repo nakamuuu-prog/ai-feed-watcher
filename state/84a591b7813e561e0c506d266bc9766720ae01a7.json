@@ -1,8 +1,21 @@
 {
-  "etag": "W/\"4509daab96cff7bc388560aa13fe37a3\"",
+  "etag": "W/\"704e88945cd7a47fbc71762ff1695a77\"",
   "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-  "last_modified": "Thu, 19 Feb 2026 05:34:25 GMT",
+  "last_modified": "Fri, 20 Feb 2026 02:47:51 GMT",
   "last_seen_ids": [
+    "eae44eed817a5477c87d78f40408945c648f82c5",
+    "10d5119eeba254fee17ec33960d147fd2610ec0b",
+    "e4bafcfdc018debc41c55d651709cbecb30866a1",
+    "781ebd63d48a96bb0753a63cbd2f2e90d50002d7",
+    "d40a3a9d5bbf8fea0a13ed77f2b91a9f87107048",
+    "3a2125370a846b2f5415e6c41933dca3f3f3fba4",
+    "ae7c808be71ec271418bab31d0e2e102779b7875",
+    "fb8bc8ed19b52ed3fabc74212fcb68e5f581234b",
+    "b64941dbd37e09253bbb1547f827d7a7b702e30a",
+    "c07124819365f5cf7b4312f54bfe38828ee13dc9",
+    "80c6b855232dd481dcababbd7fe886726dc137d8",
+    "de9142c47f9587f969f96f44c4241c784d3f4fc3",
+    "c81c1788d76abadcece22613b22698e35e3e924d",
     "d33606c88d4b223b09d465a90fc185a85b8e0c5a",
     "d9ecc3d29d618aa36c495816ced901fac9a3277a",
     "33d39a5e54efdbadc20e767c0bccf14f77a4ca1b",
@@ -39,20 +52,7 @@
     "a9e6ce00e062c48f5fffb014d3d0d91b3ffdb99c",
     "2639f27705a46d67fbf9c58825aaba0ee23e5f50",
     "d608bd7b1748455932123a5408bcf244b8d00aa2",
-    "3d4a110d0c990078d4da2af0e383cfc595e0644b",
-    "9909e458bac8c2b59c8d03fb5e9baa08371f573f",
-    "b1b27b9e224cd1e0b988ec8a6ab894e44c5302a2",
-    "bdffa013d4ddfe589d3f45b22b7154d088581c11",
-    "366f8a3ea4a96332baa2efc65496a10c791ac4a0",
-    "a06cd1429c6d13fd47dbdc15e42da0ff3c509956",
-    "dd98c031f811d25e07e2e9fefa781b59fc8ed40b",
-    "d8b3c84fa56d28a2b2b425d8e5c4e1aa11621f81",
-    "a67c37156342bb6df796f2c6781467f1fa673ca5",
-    "c0bcc722d608f2965ae3998f3c33bb7cb680b5a3",
-    "26bf445e1f78a8d086f9a477fb9086f8119986ae",
-    "d6aedad76f136829ce26975f7b433f70456bcca0",
-    "a57481b68bc29472676e849f23f08fb2e2713e1d",
-    "e26debd71cd8358564a39f4efca276a5acef6d44"
+    "3d4a110d0c990078d4da2af0e383cfc595e0644b"
   ],
-  "updated_at": "2026-02-19T09:36:08.185043+00:00"
+  "updated_at": "2026-02-20T04:24:47.625551+00:00"
 }

@@ -1,8 +1,19 @@
 {
-  "etag": "W/\"e027db2cf0be7019cb4a5fc473c2f2c1\"",
+  "etag": "W/\"30e20f92a733d9cb5051143befee2cd9\"",
   "feed_url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-  "last_modified": "Mon, 23 Feb 2026 08:30:39 GMT",
+  "last_modified": "Tue, 24 Feb 2026 01:18:11 GMT",
   "last_seen_ids": [
+    "7b4c8b93f6db138e184cf26c52cfccaf478811c5",
+    "9be75ac430d7a6ffb24e284bea6de2587a18cf61",
+    "1b8796788b29fa1f6d5410ba4d379969240a5aa1",
+    "300dcbd5271501fdbcd6594c1280ce68fda8ac39",
+    "674362de13325c48b98ba9132f106bbdf8ca595e",
+    "8f3795e61b95f32bca589bd2809f46f285cc8bc8",
+    "fea8990c5cba7088e6a116d3a215b5bb3dbac69a",
+    "81700928e6287c40619692e5305c7cdbb9214a95",
+    "7217d6e63a47b3501fcc6c03102695efb2eda811",
+    "0b8f355013db192409a0df47886fd22669b7dde1",
+    "4956e1cedb0c39dc95e22082efe2a1232eea2e11",
     "6ab0701cf3309c726f8cda41155a006bcb1f27ce",
     "dab1af43c2f579c040ffd4818293710e2b08c7a1",
     "59719f8313cd5fa72794fbc555357ab8063b2499",
@@ -41,18 +52,7 @@
     "33d39a5e54efdbadc20e767c0bccf14f77a4ca1b",
     "2c83ffe5180907f09cc905ca0cdcf7367825a277",
     "6ab0c84a38725efbdee87dd2611f1e90d82648ea",
-    "74995d901cdc36b0e27f272a4b70e249e934f47a",
-    "f9abed1f05ce342d1b121331d55dda1d98a28d0a",
-    "bfdc41320fd0939cb87b1c3fe755d5c892e5c01f",
-    "ba38f01fd916244e50d9e06740cf79bb89de367d",
-    "d7c131b3ab4fa67958fa8e11c9c61a76ecd0bd18",
-    "4ec0aba798dfe8d412bc9b9fb16de8fd7e6bcc0b",
-    "97d9cad7fe418f02197bedb28d4b910cf7f4b983",
-    "d8a67ff15f13eb79466f5c96b236dfa9980f2c0c",
-    "6a16c886ed6335a472649a3f0d32f9282b808de2",
-    "ff3447f9f5268d3201f184c4c2bc7146a059c39e",
-    "0f1f935ef94503aaae70e6c3291034e9e51321eb",
-    "33f3bbfd3789b0b70fd0ca1322f053d806fc4f4e"
+    "74995d901cdc36b0e27f272a4b70e249e934f47a"
   ],
-  "updated_at": "2026-02-23T09:43:34.527422+00:00"
+  "updated_at": "2026-02-24T04:28:37.634122+00:00"
 }

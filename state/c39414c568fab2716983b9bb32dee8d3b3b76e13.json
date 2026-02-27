@@ -3,6 +3,10 @@
   "feed_url": "https://blog.google/technology/ai/rss/",
   "last_modified": null,
   "last_seen_ids": [
+    "185b45df433cdb8abb40cc1af0d67b9e1afbafc1",
+    "6d43ed70acab8f23ba870ca6b05b68b4622b3ec8",
+    "ce6e3bce22bdf936534475c6fa529fa119fdfedd",
+    "e1af27210d57900bc4dad61cd9989d2923fbffdc",
     "a022b23fc054f4e5cbbe33afa0cfe76f597b8922",
     "9c5cc75402b76a14195448662f99df5cfa1fa4cf",
     "efc250eeac81104eab19fdaa7e62fc34fb6204fc",
@@ -48,11 +52,7 @@
     "e3cd81c9be2a60d7324477357957ddf828101094",
     "48d7f5325f9f863b9c8932d80ebb5410b648d45d",
     "5378dbaa968e75863a98f91daf0c2c7dd1863e29",
-    "e0f9464314e630337e8d2042cc758c9223af497b",
-    "aa7c51cc0006745cd53de5fe555f3eb212a3764a",
-    "b497d895fdbc1dd37aba448633b9eaf66a5eb729",
-    "0bd333a0a2aab7034011313f556afcbb084ccbd3",
-    "d2ca84552be82334113f5a7e040166186f117103"
+    "e0f9464314e630337e8d2042cc758c9223af497b"
   ],
-  "updated_at": "2026-02-26T09:39:28.639168+00:00"
+  "updated_at": "2026-02-27T04:23:32.914784+00:00"
 }

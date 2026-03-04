@@ -1,8 +1,9 @@
 {
   "etag": "\"peKtKA\"",
   "feed_url": "https://deepmind.google/blog/rss.xml",
-  "last_modified": "Thu, 19 Feb 2026 16:06:14 GMT",
+  "last_modified": "Tue, 03 Mar 2026 16:35:55 GMT",
   "last_seen_ids": [
+    "f27163a5c3a82d3627a52d4ca52472c3606d71b9",
     "1faf160a50f79611ce4d2fc006d6052452824f83",
     "926481ff33d539e9f28950687f068944fc6776e2",
     "fd50a220fdc4516fb50843acfe306d551bb2569b",
@@ -21,5 +22,5 @@
     "68ba2e17387dc4540579f527fa24255f11c75272",
     "2d184710a157a2f2178f178b11ba506739be0c2a"
   ],
-  "updated_at": "2026-03-03T09:32:55.487366+00:00"
+  "updated_at": "2026-03-04T04:18:43.576607+00:00"
 }

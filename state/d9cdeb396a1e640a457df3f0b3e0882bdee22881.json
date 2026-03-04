@@ -1,8 +1,11 @@
 {
   "etag": null,
   "feed_url": "https://aws.amazon.com/blogs/machine-learning/feed/",
-  "last_modified": "Tue, 03 Mar 2026 06:12:55 GMT",
+  "last_modified": "Wed, 04 Mar 2026 00:41:58 GMT",
   "last_seen_ids": [
+    "0f821a77f5a401f56d2a9a917627ec385f3e753d",
+    "697daebb8e81be24e72d723b56923a27f57ab26c",
+    "247487762e7d12a99ead3a3c98adbaeb44f26395",
     "108692dac794ba47e139bcd50c78e84580a43ee8",
     "27bee631891f7e36b43dee19ed6b554f79bab797",
     "0d8b58724781d6f3fcb58be77059fb77b957b25a",
@@ -49,10 +52,7 @@
     "a4ec71e68bb8bf7171df55fc58e16ae4e75d485a",
     "927cd527005ef77618cf981e83edab83a05157c8",
     "9e96d38912bed434c26b45e2cd410424686a3b99",
-    "5d381c3dc37aad74408b494310f4b44fb0c6f533",
-    "78048d7be8d6eb3c348c26ac7c3d7e135bd04f13",
-    "f77d8726d51433762fbb4954988362dc5ec6d2c6",
-    "ea615eb4b8774c5ef6e5ab4425e435ba26927c6a"
+    "5d381c3dc37aad74408b494310f4b44fb0c6f533"
   ],
-  "updated_at": "2026-03-03T09:32:57.614449+00:00"
+  "updated_at": "2026-03-04T04:18:45.709127+00:00"
 }

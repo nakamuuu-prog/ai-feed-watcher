@@ -1,7 +1,7 @@
 {
-  "etag": "\"85b5e10ad032e4f6c266a2417730ae65\"",
+  "etag": "\"3c98c0a61bd92a232727225e86ef6ed3\"",
   "feed_url": "https://developer.nvidia.com/blog/category/generative-ai/feed/",
-  "last_modified": "Thu, 05 Mar 2026 22:53:05 GMT",
+  "last_modified": "Fri, 06 Mar 2026 20:44:27 GMT",
   "last_seen_ids": [
     "e7b68de7371cd4705905ccbdc2429f3de2873931",
     "b20e530d9ebad7bf616544e5e2bfd217991c0d3b",
@@ -54,5 +54,5 @@
     "e4b371278deeb650fdc51c339dbb3a36baeb4034",
     "9f3664902164e71df7473403a22de35265fa2513"
   ],
-  "updated_at": "2026-03-06T04:18:35.084908+00:00"
+  "updated_at": "2026-03-07T04:10:46.010512+00:00"
 }

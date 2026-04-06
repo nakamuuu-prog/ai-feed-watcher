@@ -3,6 +3,7 @@
   "feed_url": "https://openai.com/blog/rss.xml",
   "last_modified": null,
   "last_seen_ids": [
+    "31f4bff2af385a2c6ac953aeba84020eb05276fe",
     "627413d21cd7994148a1f25403b6fc4ec796fe96",
     "b681370c7a53bb6a1de8c8408cca851634e71e37",
     "a9b4cf584547554d66df2ec5670694cf4ac64662",
@@ -51,8 +52,7 @@
     "d480f86c234cd54d8610e091a8667d0f2eb1d000",
     "8c59d007b8cb8a8512e39e01a35cc0b3fba85110",
     "989e332f832c89879e69f338b7fd1bff352f3736",
-    "3d72134cdaba3173becd331950cecb0955fbbf78",
-    "de2ca3d7578dd51cbe196bf098f482b58becc321"
+    "3d72134cdaba3173becd331950cecb0955fbbf78"
   ],
-  "updated_at": "2026-04-06T05:08:36.238610+00:00"
+  "updated_at": "2026-04-06T10:01:00.677134+00:00"
 }

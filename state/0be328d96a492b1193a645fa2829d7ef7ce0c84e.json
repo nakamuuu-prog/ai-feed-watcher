@@ -1,7 +1,9 @@
 {
-  "etag": "\"268c7-64d02bfd73ec4;64d02be8508a5",
+  "etag": "\"2bf88-64feb28d4685a;64d02be8508a5",
   "feed_url": "https://bair.berkeley.edu/blog/feed",
-  "last_modified": "Sat, 14 Mar 2026 21:34:24 GMT",
-  "last_seen_ids": [],
-  "updated_at": "2026-03-15T04:42:39.868582+00:00"
+  "last_modified": "Mon, 20 Apr 2026 21:41:21 GMT",
+  "last_seen_ids": [
+    "988e365297de4536bf608e9190b4fd958801d158"
+  ],
+  "updated_at": "2026-04-21T05:12:34.095850+00:00"
 }

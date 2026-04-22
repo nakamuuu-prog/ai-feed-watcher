@@ -1,5 +1,5 @@
 {
-  "etag": "W/\"36dfb-6vM1M6VOOZaAZkMID4h0AAGJ9P0\"",
+  "etag": "W/\"36f26-eS8B9nHa9fuVFgnMBBzf6BNm8wQ\"",
   "feed_url": "https://huggingface.co/blog/feed.xml",
   "last_modified": null,
   "last_seen_ids": [
@@ -54,5 +54,5 @@
     "138245bd387679087b9961b5cc0a308b9af4c6ea",
     "ed9a225ac429b7e02e931e5b59cb00bb82a5e282"
   ],
-  "updated_at": "2026-04-21T10:11:42.052173+00:00"
+  "updated_at": "2026-04-22T05:10:41.043743+00:00"
 }

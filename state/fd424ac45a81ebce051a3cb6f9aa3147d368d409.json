@@ -1,8 +1,9 @@
 {
   "etag": null,
   "feed_url": "https://research.google/blog/rss/",
-  "last_modified": "Wed, 29 Apr 2026 21:07:00 GMT",
+  "last_modified": "Fri, 01 May 2026 16:37:00 GMT",
   "last_seen_ids": [
+    "a9ea3569dfaa08fd1bef64b91d6141ad6d00699f",
     "04ab2a5030151b83027a155dc613750a6fbfe040",
     "358b884e859f93d06d984a72414186ecf4cc21ab",
     "a52bbfc2a44fd8f5f469938833ea30649b2728bb",
@@ -51,8 +52,7 @@
     "2b48e360574bdae1c29815e63bbaf496b4633a17",
     "959b25f9956aaf064abf2e4f6573bb74f4b403ef",
     "5becdbb53db87ec178f752e16276f6c4d597642b",
-    "1bf4c91d3a3cd80b7678ff67eb5e238ed6fa9ed4",
-    "8a175bed5227e455b1df1eb0492ec075db4496c2"
+    "1bf4c91d3a3cd80b7678ff67eb5e238ed6fa9ed4"
   ],
-  "updated_at": "2026-05-01T10:16:09.163181+00:00"
+  "updated_at": "2026-05-02T05:21:37.006465+00:00"
 }

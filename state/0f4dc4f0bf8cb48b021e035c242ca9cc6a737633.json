@@ -1,8 +1,11 @@
 {
-  "etag": "W/\"960a7a259eb380ea8ff7f05872437364\"",
+  "etag": "W/\"38618354067fe6526be2f1d0784f9f12\"",
   "feed_url": "https://www.marktechpost.com/feed/",
-  "last_modified": "Tue, 19 May 2026 22:10:44 GMT",
+  "last_modified": "Wed, 20 May 2026 10:41:06 GMT",
   "last_seen_ids": [
+    "977cd2c7b90aeab3ba730ce0e27944ed21285168",
+    "3816fde104f8fceb2881d9d99b3dbcf25eb53869",
+    "1bb0c6765ee39d1504d3e2d2a90e69935bc0a645",
     "7eeaf33653b4af08813fae6dcb43bfd18b69a5a5",
     "7484da00a1e5fc38976c79cbfe9eb694d721be47",
     "b2f57859061369ecb849a1d0d66891e400700924",
@@ -49,10 +52,7 @@
     "2e9064b34767afe42b3c6672a6e045c6c4d175d2",
     "cde7714ff0a79e2ccb5aa6f5fc717a47dfc3d947",
     "516608bc4d70ababbdc64cd05c5e5e45fb353beb",
-    "e7ee74365f751a42b4779c38d0d12f4ed65abcef",
-    "7b083b99b773242ee633e5cbc605fd541ca5cabb",
-    "9de8635e652347926fbf8916eaf1ca8ea8d42e7a",
-    "5f4c3adfea9ede41ee56db7b0a421b70ca6ea3f6"
+    "e7ee74365f751a42b4779c38d0d12f4ed65abcef"
   ],
-  "updated_at": "2026-05-20T06:30:34.580971+00:00"
+  "updated_at": "2026-05-20T11:42:50.037212+00:00"
 }
